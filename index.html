@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AQI Banner NYUAD</title>
+  <!-- Add your CSS styles or external stylesheet links here -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="aqi-embed-content hidden ">
+    <div class="teal-context aqi-wrapper">
+      <article class="component teaser icon chat">
+        <div class="teaserWrapper alignwide">
+          <div id="aqi-group" class="wp-container-5 wp-block-group alignfull aqi-group">
+            <div class="wp-block-group__inner-container">
+              <h1 class="aqi-title">NYUAD Air Quality</h1>
+
+              <!-- Loader -->
+              <div class="aqi-loader">
+                <div class="loading"></div>
+                <div class="aqi-loader-text">Loading Air Quality data...</div>
+              </div>
+
+              <!-- Data -->
+              <div class="aqi-data-wrapper">
+                <div class="aqi-inner">
+                  <div class="aqi-items">
+
+                  </div>
+                  <div class="aqi-scale">
+                    <span data-category="hazardous"></span>
+                    <span data-category="very-unhealthy"></span>
+                    <span data-category="unhealthy"></span>
+                    <span data-category="unhealthy-sentitive"></span>
+                    <span data-category="moderate"></span>
+                    <span data-category="good"></span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- When en error occurs -->
+              <div class="aqi-error-wrapper">
+                <div>Air Quality data is not available currently.</div>
+              </div>
+
+            </div>
+            <div id="last-updated"></div>
+          </div>
+          <a href="https://students.nyuad.nyu.edu/services/safety-and-awareness/nyuad-air-quality-index/"
+            class="go"></a>
+      </article>
+    </div>
+  </div>
+
+  <script src="aqiHelper.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
