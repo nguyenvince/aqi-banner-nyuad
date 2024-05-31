@@ -10,59 +10,10 @@
 </head>
 
 <body>
-  <div class="aqi-embed-content hidden ">
-    <div class="teal-context aqi-wrapper">
-      <article class="component teaser icon chat">
-        <div class="teaserWrapper alignwide">
-          <div id="aqi-group" class="wp-container-5 wp-block-group alignfull aqi-group">
-            <div class="wp-block-group__inner-container">
-              <h1 class="aqi-title">NYUAD Air Quality</h1>
-
-              <!-- Loader -->
-              <div class="aqi-loader">
-                <div class="loading"></div>
-                <div class="aqi-loader-text">Loading Air Quality data...</div>
-              </div>
-
-              <!-- Data -->
-              <div class="aqi-data-wrapper">
-                <div class="aqi-inner">
-                  <div class="aqi-items">
-
-                  </div>
-                  <div class="aqi-scale">
-                    <span data-category="hazardous"></span>
-                    <span data-category="very-unhealthy"></span>
-                    <span data-category="unhealthy"></span>
-                    <span data-category="unhealthy-sentitive"></span>
-                    <span data-category="moderate"></span>
-                    <span data-category="good"></span>
-                  </div>
-                </div>
-              </div>
-
-              <!-- When en error occurs -->
-              <div class="aqi-error-wrapper">
-                <div>Air Quality data is not available currently.</div>
-              </div>
-
-            </div>
-            <div id="last-updated"></div>
-          </div>
-          <a href="https://students.nyuad.nyu.edu/services/safety-and-awareness/nyuad-air-quality-index/"
-            class="go"></a>
-      </article>
-    </div>
+  <div class="aqi-banner-widget-wrapper">
+    <iframe class="aqi-banners" src="https://citiesair.com/nyuadBanner?themePreference=Dark" width="100%" height="100%"
+      frameborder="0"></iframe>
   </div>
-
-  <iframe src="http://localhost:3000/nyuadBanner?host=intranet&isWidget=true" width="280px" height="570px"
-    frameborder="1" style="overflow: hidden"></iframe>
-
-  <iframe src="http://localhost:3000/nyuadBanner?host=students-portal&isWidget=false" width="750px" height="450px"
-    frameborder="1" style="overflow: hidden"></iframe>
-
-  <script src="aqiHelper.js"></script>
-  <script src="script.js"></script>
 </body>
 
 </html>
